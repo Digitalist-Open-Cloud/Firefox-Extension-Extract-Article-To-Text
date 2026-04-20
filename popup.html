@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article to Text</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Article to Text</h1>
+    </header>
+
+    <div id="loading" class="loading">
+      <div class="spinner"></div>
+      <p>Extracting article...</p>
+    </div>
+
+    <div id="error" class="error hidden">
+      <p>Could not extract article content from this page.</p>
+    </div>
+
+    <div id="result" class="result hidden">
+      <div class="meta">
+        <input type="text" id="title" readonly>
+        <input type="text" id="url" readonly>
+      </div>
+
+      <div class="toolbar">
+        <button id="copy-btn" class="btn primary">Copy All</button>
+        <button id="copy-content-btn" class="btn">Copy Content Only</button>
+        <span id="copy-status" class="status"></span>
+      </div>
+
+      <textarea id="output" readonly></textarea>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Article to Text",
+  "version": "1.0",
+  "description": "Extract article content from web pages and convert to clean text for AI tools",
+  "permissions": ["activeTab", "scripting"],
+  "icons": {
+    "48": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon.png"
+    }
+  }
+}

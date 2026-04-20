@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  width: 400px;
+  min-height: 300px;
+  background: #f5f5f5;
+}
+
+.container {
+  padding: 16px;
+}
+
+header {
+  margin-bottom: 16px;
+}
+
+header h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #ddd;
+  border-top-color: #0078d4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.loading p {
+  margin-top: 12px;
+  color: #666;
+}
+
+.error {
+  padding: 20px;
+  text-align: center;
+  color: #d32f2f;
+  background: #ffebee;
+  border-radius: 4px;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.meta {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.meta input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 13px;
+  background: #fff;
+}
+
+.meta input#title {
+  font-weight: 600;
+  color: #333;
+}
+
+.meta input#url {
+  color: #666;
+  font-size: 12px;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn.primary {
+  background: #0078d4;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #005a9e;
+}
+
+.btn:not(.primary) {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.btn:not(.primary):hover {
+  background: #d0d0d0;
+}
+
+.status {
+  font-size: 12px;
+  color: #4caf50;
+  min-width: 60px;
+}
+
+#output {
+  width: 100%;
+  min-height: 200px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 12px;
+  line-height: 1.5;
+  resize: vertical;
+  background: #fff;
+}
