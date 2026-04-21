@@ -1,6 +1,6 @@
 # Article to Text
 
-Firefox extension that extracts article content from web pages and converts to clean text for AI tools.
+Firefox extension that extracts article content from web pages and converts to clean text.
 
 ## Installation
 
