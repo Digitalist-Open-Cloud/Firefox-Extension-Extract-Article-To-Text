@@ -1,6 +1,6 @@
 # Article to Text
 
-Firefox extension that extracts article content from web pages and converts to clean text.
+Firefox extension that extracts article content from web pages and converts to clean text for AI tools.
 
 ## Installation
 
@@ -11,6 +11,16 @@ Firefox extension that extracts article content from web pages and converts to c
 5. The extension icon will appear in your Firefox toolbar
 
 Note: This is a temporary installation. To keep the extension permanently, you would need to sign it through Mozilla.
+
+## Keyboard Shortcuts
+
+- **Copy text**: `Ctrl+Shift+C` (Mac: `Command+Shift+C`)
+- **Save text**: `Ctrl+Shift+S` (Mac: `Command+Shift+S`)
+
+To customize shortcuts:
+1. Go to `about:addons`
+2. Click the gear icon → "Manage Extension Shortcuts"
+3. Find "Article to Text" and configure your preferred keys
 
 ## Usage
 
@@ -34,6 +44,7 @@ It automatically removes:
 ## Files
 
 - `manifest.json` - Extension manifest
+- `background.js` - Background script for keyboard shortcuts
 - `popup.html` - Extension popup UI
 - `popup.js` - Popup functionality and extraction logic
 - `styles.css` - Popup styling
