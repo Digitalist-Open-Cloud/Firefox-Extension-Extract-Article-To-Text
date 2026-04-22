@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Article to Text",
   "version": "0.5",
-  "description": "Extract article content from web pages and convert to clean text for AI tools",
+  "description": "Firefox extension that extracts article content from web pages and converts to clean text",
   "permissions": ["activeTab", "scripting"],
   "icons": {
     "48": "icon.png"

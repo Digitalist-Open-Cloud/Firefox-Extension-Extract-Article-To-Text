@@ -1,6 +1,6 @@
 # Article to Text
 
-Firefox extension that extracts article content from web pages and converts to clean text for AI tools.
+Firefox extension that extracts article content from web pages and converts to clean text for AI tools, for archiving, for whatever you need.
 
 Supports the most common html tags and attributes for an article markup, like:
 
@@ -60,3 +60,7 @@ It automatically removes:
 - `popup.js` - Popup functionality and extraction logic
 - `styles.css` - Popup styling
 - `icon.png` - Extension icon
+
+## External dependencies, external communication
+
+None. Your data is private.
