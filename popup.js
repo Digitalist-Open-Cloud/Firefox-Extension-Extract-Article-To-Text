@@ -107,9 +107,6 @@ document.addEventListener('DOMContentLoaded', async () => {
         var url = window.location.href;
         var content = extractText(article);
 
-        // Add title at the start of content
-        content = title + '\n\n' + content;
-
         return { title: title, url: url, content: content };
       }
     });
@@ -142,11 +139,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function getTextForExport() {
     const title = titleInput.value;
-    let content = output.value;
-    if (content.startsWith(title)) {
-      content = content.substring(title.length).trim();
-    }
-    return content + '\n\nSource: ' + urlInput.value;
+    return title + '\n\n' + output.value + '\n\nSource: ' + urlInput.value;
   }
 
   copyBtn.addEventListener('click', async () => {

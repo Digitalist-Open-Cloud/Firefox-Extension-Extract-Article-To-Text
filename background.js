@@ -12,16 +12,17 @@ browser.commands.onCommand.addListener(async (command) => {
 
   const content = data.content;
   const url = data.url;
+  const title = data.title;
 
   if (command === 'copy-text') {
     const text = content + '\n\nSource: ' + url;
     await navigator.clipboard.writeText(text);
   } else if (command === 'save-text') {
-    const text = content + '\n\nSource: ' + url;
+    const text = title + '\n\n' + content + '\n\nSource: ' + url;
     const blob = new Blob([text], { type: 'text/plain' });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    const filename = data.title.replace(/[^a-z0-9]/gi, '_').substring(0, 50) + '.txt';
+    const filename = title.replace(/[^a-z0-9]/gi, '_').substring(0, 50) + '.txt';
     a.download = filename;
     a.click();
   }
